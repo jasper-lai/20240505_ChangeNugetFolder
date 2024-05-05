@@ -10,11 +10,11 @@
         <p>另外, 發現 %UserProfile%.nuget\packages 佔了 16.4GB, 有找到 <a href="https://dev.to/tombohub/how-to-change-default-nuget-packages-folder-on-windows-51hb" target="_blank">How to change default Nuget packages folder on Windows</a> 的文章, 就來實際演練一下吧.</p>
         <!-- more -->
         <p>[圖1] 磁碟清理<br />
-            <img src="pictures/01-clean_disk.png" alt="01 clean_disk" /></p>
+            <img src="https://github.com/jasper-lai/20240505_ChangeNugetFolder/blob/master/pictures/01-clean_disk.png?raw=true" alt="01 clean_disk" /></p>
         <p>[圖2] WizTree (%Temp%)<br />
-            <img src="pictures/02-wiztree_temp.png" alt="02 wiztree_temp" /></p>
+            <img src="https://github.com/jasper-lai/20240505_ChangeNugetFolder/blob/master/pictures/02-wiztree_temp.png?raw=true" alt="02 wiztree_temp" /></p>
         <p>[圖3] WizTree (%UserProfile%.nuget\packages)<br />
-            <img src="pictures/03-wiztree_nuget_packages.png" alt="03 wiztree_nuget_packages" /></p>
+            <img src="https://github.com/jasper-lai/20240505_ChangeNugetFolder/blob/master/pictures/03-wiztree_nuget_packages.png?raw=true" alt="03 wiztree_nuget_packages" /></p>
         <h2 id="作法">作法</h2>
         <p>1.. 關掉所有的 Visual Studio 20XX</p>
         <p>2.. 建立資料夾<br />
@@ -48,9 +48,9 @@ plugins-cache: C:\Users\user01\AppData\Local\NuGet\plugins-cache
 </code></pre>
         <p>5.. 找一個先前寫的範例還原一下 nuget packages ( <a href="https://www.jasperstudy.com/2024/04/aspnet-core-8-web-api-oracle-swagger.html" target="_blank">ASP.NET Core 8 Web API 使用 Oracle.EntityFrameworkCore 存取 Oracle, 並使用 Swagger/OpenAPI 工具進行測試</a> )</p>
         <p>[圖4] 在 Visual Studio 2022 開啟方案檔, 它會自動進行 還原 Nuget 套件<br />
-            <img src="pictures/04-vs2022_auto_restore_nuget_packages.png" alt="04 vs2022_auto_restore_nuget_packages" /></p>
+            <img src="https://github.com/jasper-lai/20240505_ChangeNugetFolder/blob/master/pictures/04-vs2022_auto_restore_nuget_packages.png?raw=true" alt="04 vs2022_auto_restore_nuget_packages" /></p>
         <p>[圖5] 確認真的有還原 Nuget 套件到 D:\99-UserProfile\.nuget\packages 資料夾下<br />
-            <img src="pictures/05-explorer_d_nuget_packages.png" alt="05 explorer_d_nuget_packages" /></p>
+            <img src="https://github.com/jasper-lai/20240505_ChangeNugetFolder/blob/master/pictures/05-explorer_d_nuget_packages.png?raw=true" alt="05 explorer_d_nuget_packages" /></p>
         <p>6.. 將 %UserProfile%.nuget\packages 複製到 D:\99-UserProfile\.nuget\packages</p>
         <p>7.. 刪除 %UserProfile%.nuget\packages 的子資料夾</p>
         <h2 id="參考文件">參考文件</h2>
