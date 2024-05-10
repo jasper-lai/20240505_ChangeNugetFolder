@@ -67,15 +67,26 @@ plugins-cache: C:\Users\user01\AppData\Local\NuGet\plugins-cache
 5.. 找一個先前寫的範例還原一下 nuget packages ( <a href="https://www.jasperstudy.com/2024/04/aspnet-core-8-web-api-oracle-swagger.html" target="_blank">ASP.NET Core 8 Web API 使用 Oracle.EntityFrameworkCore 存取 Oracle, 並使用 Swagger/OpenAPI 工具進行測試</a> )  
 
 [圖4] 在 Visual Studio 2022 開啟方案檔, 它會自動進行 還原 Nuget 套件  
-![04 vs2022_auto_restore_nuget_packages](pictures/04-vs2022_auto_restore_nuget_packages.png)  
+![04 vs2022_auto_restore_nuget](pictures/04-vs2022_auto_restore_nuget.png)  
 
 [圖5] 確認真的有還原 Nuget 套件到 D:\99-UserProfile\\.nuget\packages 資料夾下  
-![05 explorer_d_nuget_packages](pictures/05-explorer_d_nuget_packages.png)
+![05 explorer_d_nuget_packages](pictures/05-explorer_d_nuget_packages.png)  
 
 6.. 將 %UserProfile%\.nuget\packages 複製到 D:\99-UserProfile\\.nuget\packages  
 
 7.. 刪除 %UserProfile%\.nuget\packages 的子資料夾  
 
+## 2024.05.10 補充
+
+### 如果有使用 LINQPad ...
+
+如果有使用 LINQPad, 請設定 NUGET_PACKAGES 環境變數.   
+經實測, 看來 LINQPad 不會使用 %APPDATA%\NuGet\NuGet.config  的設定.  
+
+```powershell
+D:\Temp>echo %NUGET_PACKAGES%
+D:\99-UserProfile\.nuget\packages
+```
 
 ## 參考文件
 
