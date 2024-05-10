@@ -67,7 +67,7 @@ plugins-cache: C:\Users\user01\AppData\Local\NuGet\plugins-cache
 5.. 找一個先前寫的範例還原一下 nuget packages ( <a href="https://www.jasperstudy.com/2024/04/aspnet-core-8-web-api-oracle-swagger.html" target="_blank">ASP.NET Core 8 Web API 使用 Oracle.EntityFrameworkCore 存取 Oracle, 並使用 Swagger/OpenAPI 工具進行測試</a> )  
 
 [圖4] 在 Visual Studio 2022 開啟方案檔, 它會自動進行 還原 Nuget 套件  
-![04 vs2022_auto_restore_nuget](pictures/04-vs2022_auto_restore_nuget.png)  
+![04 auto_restore_nuget](pictures/04-auto_restore_nuget.png)  
 
 [圖5] 確認真的有還原 Nuget 套件到 D:\99-UserProfile\\.nuget\packages 資料夾下  
 ![05 explorer_d_nuget_packages](pictures/05-explorer_d_nuget_packages.png)  
